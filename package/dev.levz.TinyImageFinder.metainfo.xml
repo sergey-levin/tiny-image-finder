@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop-application">
+  <id>dev.levz.TinyImageFinder</id>
+  <launchable type="desktop-id">dev.levz.TinyImageFinder.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+  <developer_name>Sergey Levin</developer_name>
+  <developer_name xml:lang="ru">Сергей Левин</developer_name>
+  <update_contact>serjth@levz.dev</update_contact>
+  <name>Tiny Image Finder</name>
+  <name xml:lang="ru">Поиск картинок</name>
+  <summary>Image Finder with Preview</summary>
+  <summary xml:lang="ru">Поисковик картинок с предпросмотром</summary>
+  <description>
+    <p>
+    This tool allows you to fast search and preview images from selected folder. It has scalable search algorithm that use all capabilities of your device.
+    </p>
+    <p xml:lang="ru">
+    Это приложение быстро находит изображения во всех папках и даёт возможность предпросмотра. Приложение имеет быстрый масштабируемый алгоритм поиска, задействующий все возможности вашего устройства.
+    </p>
+  </description>
+  <releases>
+    <release version="0.1.0" date="2023-07-22">
+        <description>
+            <p>
+            * Fast search and preview images from selected folder.
+            * Image name filters.
+            * Recursive search - find images in all subfolders.
+            </p>
+            <p xml:lang="ru">
+            * Быстрый поиск и предпросмотр изображений из выбранной папки.
+            * Поиск изображений по заданным названиям.
+            * Рекурсивный поиск по всем подпапкам.
+            </p>
+        </description>
+    </release>
+  </releases>
+  <keywords>
+    <keyword>Finder</keyword>
+    <keyword>search</keyword>
+    <keyword>find</keyword>
+    <keyword>image</keyword>
+    <keyword>photo</keyword>
+    <keyword>preview</keyword>
+    <keyword xml:lang="ru">Поисковик</keyword>
+    <keyword xml:lang="ru">поиск</keyword>
+    <keyword xml:lang="ru">картинка</keyword>
+    <keyword xml:lang="ru">фото</keyword>
+    <keyword xml:lang="ru">просмотр</keyword>
+  </keywords>
+  <url type="homepage">https://levz.dev/image-finder/</url>
+  <!--<icon type="cached" height="128" width="128">dev.levz.imagefinder.png</icon>-->
+  <screenshots>
+    <screenshot type="default">
+      <caption>Find and preview thousands of images</caption>
+      <caption xml:lang="ru">Найдите и просмотрите тысячи изображений</caption>
+      <image>https://levz.dev/image/image-finder-1.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Find and preview thousands of images</caption>
+      <caption xml:lang="ru">Найдите и просмотрите тысячи изображений</caption>
+      <image>https://levz.dev/image/image-finder-2.png</image>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>Graphics</category>
+    <category>Viewer</category>
+  </categories>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <provides>
+    <binary>image-finder</binary>
+    <id>dev.levz.TinyImageFinder.desktop</id>
+  </provides>
+  <content_rating type="oars-1.1"/>
+</component>

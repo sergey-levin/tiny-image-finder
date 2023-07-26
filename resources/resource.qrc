@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../qml/MainWindow.qml</file>
+        <file>../images/error32x32.png</file>
+        <file>../images/error64x64.png</file>
+        <file>../images/error128x128.png</file>
+        <file>../images/error256x256.png</file>
+        <file>../images/loading256x256.png</file>
+        <file>../images/loading128x128.png</file>
+        <file>../images/loading64x64.png</file>
+        <file>../images/loading32x32.png</file>
+        <file>../images/settings.png</file>
+        <file>../images/select-folder.png</file>
+        <file>../qml/ImageView.qml</file>
+        <file>../qml/SettingsView.qml</file>
+        <file>../images/personal-logo.png</file>
+        <file>../images/email.png</file>
+        <file>../images/web.png</file>
+        <file>../i18n/image-finder_ru.qm</file>
+        <file>../i18n/qt_ru.qm</file>
+        <file>../i18n/qtbase_ru.qm</file>
+        <file>../images/logo.png</file>
+        <file>../images/back.png</file>
+        <file>../images/color.png</file>
+    </qresource>
+</RCC>

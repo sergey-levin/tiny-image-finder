@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Tiny Image Finder
+Comment=Simple Image Finder with Preview
+Comment[ru]=Простой поисковик картинок с предпросмотром
+Exec=image-finder
+Type=Application
+Categories=Graphics;Viewer;
+Icon=dev.levz.TinyImageFinder

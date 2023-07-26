@@ -1,0 +1,4 @@
+Tiny Image Finder change log:
+
+v.0.1.0 (1.0.0) 2023-07-22
+* Initial release.
