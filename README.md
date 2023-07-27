@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="package/app-info/icons/128x128/dev.levz.ImageFinder.png" alt="Image Finder Icon" width="128" height="128"/>
+  <img src="package/app-info/icons/128x128/dev.levz.TinyImageFinder.png" alt="Tiny Image Finder Icon" width="128" height="128"/>
   <br>
   Tiny Image Finder
 </h1>
@@ -17,19 +17,32 @@ This app recursively find and filter by name images in selected path and show it
 
 Application developed at one day for self educating purpose to get more familiar with QML and cmake. Also I found no fast and convenient tools on Windows, Linux and macOS to filter and browse huge quantity of image previews - the thing I do often. This app is doing just this. Search algorithm is high level and straightforward, multi threaded and well scaling. The code is open source.
 
-## Install
+## Features
+
+* Fast search and preview images from selected folder.
+* Image name filters.
+* Recursive search - find images in all subfolders.
+* Open selected image using system viewer.
+* Show selected image containing folder.
+* Supported image formats (may vary depend on OS): BMP, GIF, ICO, JPEG, JPG, MNG, PBM, PGM, PNG, PPM, SVG, TIF, TIFF, XBM, XPM.
+* Windows, macOS and Linux support.
+* Open source.
+
+## Install and Source Code
 
 Get compiled standalone installers at https://levz.dev/image-finder.
+
+Get source code on GitHub: https://github.com/sergey-levin/tiny-image-finder.
+
+## License
+
+*Tiny Image Finder* available under [GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.txt).
 
 ## Log Output
 
 Enable log output:
 
     export QT_LOGGING_RULES="dev.levz.imagefinder=true"
-    
-## License
-
-Image Finder available under [GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.txt).
 
 ## Build and Run
 
