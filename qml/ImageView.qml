@@ -27,6 +27,10 @@ Rectangle {
     id: previews
     color: settings.background
 
+    function openExternally(str) {
+        Qt.openUrlExternally("file:" + str)
+    }
+
     GridView {
         id: gridView
         clip: true
@@ -79,6 +83,11 @@ Rectangle {
                                if (mouse.button === Qt.RightButton && gridView.currentIndex === index)
                                delegateContextMenu.open()
                            }
+                onPressAndHold: {
+                    gridView.currentIndex = index
+                    delegateContextMenu.open()
+                }
+                onDoubleClicked: openExternally(gridView.currentItem.filePath)
             }
         }
 
@@ -88,13 +97,13 @@ Rectangle {
                 property Item item: gridView.currentItem
                 text: qsTr("Open in External Viewer")
                 shortcut: "Ctrl+O"
-                onTriggered: Qt.openUrlExternally("file:" + item.filePath)
+                onTriggered: openExternally(item.filePath)
             }
             MenuItem {
                 property Item item: gridView.currentItem
                 text: qsTr("Show Containing Folder")
                 shortcut: "Ctrl+Shift+O"
-                onTriggered: Qt.openUrlExternally("file:" + item.filePath.slice(0, item.filePath.lastIndexOf("/")))
+                onTriggered: openExternally(item.filePath.slice(0, item.filePath.lastIndexOf("/")))
             }
         }
     }
