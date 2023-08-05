@@ -20,18 +20,32 @@
     </p>
   </description>
   <releases>
+    <release version="0.1.2" date="2023-08-05">
+        <description>
+        <ul>
+        <li>Improve ui usability for touch devices.</li>
+        <li>Added Dutch translation (credit to Vistaus).</li>
+        <li>Update KDE runtime to 6.3.</li>
+        </ul>
+        <ul xml:lang="ru">
+        <li>Улучшена работа на устройствах с пальце-ориентированным вводом.</li>
+        <li>Добавлен голландский перевод (спасибо Vistaus).</li>
+        <li>Обновлена среда исполнения KDE до версии 6.3.</li>
+        </ul>
+        </description>
+    </release>
     <release version="0.1.0" date="2023-07-22">
         <description>
-            <p>
-            * Fast search and preview images from selected folder.
-            * Image name filters.
-            * Recursive search - find images in all subfolders.
-            </p>
-            <p xml:lang="ru">
-            * Быстрый поиск и предпросмотр изображений из выбранной папки.
-            * Поиск изображений по заданным названиям.
-            * Рекурсивный поиск по всем подпапкам.
-            </p>
+        <ul>
+        <li>Fast search and preview images from selected folder.</li>
+        <li>Image name filters.</li>
+        <li>Recursive search - find images in all subfolders.</li>
+        </ul>
+        <ul xml:lang="ru">
+        <li>Быстрый поиск и предпросмотр изображений из выбранной папки.</li>
+        <li>Поиск изображений по заданным названиям.</li>
+        <li>Рекурсивный поиск по всем подпапкам.</li>
+        </ul>
         </description>
     </release>
   </releases>

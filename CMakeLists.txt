@@ -6,7 +6,7 @@ if (APPLE)
     set(APP_VERSION 1.0.0)
 else()
     set(APP_EXE image-finder)
-    set(APP_VERSION 0.1.1)
+    set(APP_VERSION 0.1.2)
 endif()
 
 set(SUPPORTED_LANGUAGES CXX)

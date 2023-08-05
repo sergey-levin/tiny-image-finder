@@ -1,4 +1,10 @@
 Tiny Image Finder change log:
 
+v.0.1.2 (1.0.0) 2023-08-05
+* Added Dutch translation (credit to Vistaus).
+
+v.0.1.1 (1.0.0) 2023-08-04
+* Improve ui usability for touch devices.
+
 v.0.1.0 (1.0.0) 2023-07-22
 * Initial release.
