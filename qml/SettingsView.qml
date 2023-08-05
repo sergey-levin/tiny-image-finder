@@ -101,73 +101,107 @@ ColumnLayout {
 
     Item { Layout.fillHeight: true }
 
-    Text {
-        Layout.leftMargin: 100
-        Layout.rightMargin: 20
-        font.pointSize: 12
-        text: qsTr("Copyright")
-    }
-
-    ColumnLayout {
-        height: 50
-        Layout.margins: 20
-
-        Text { text: "© 2023 " + qsTr("Sergey Levin") }
-
-        RowLayout {
-            Text { text: qsTr("Licence: ") }
-            ToolButton { text: "GPL v3"; hoverEnabled: true; onClicked: Qt.openUrlExternally("https://www.gnu.org/licenses/gpl-3.0.txt") }
-        }
-    }
-
-    Text {
-        Layout.leftMargin: 100
-        Layout.rightMargin: 20
-        font.pointSize: 12
-        text: qsTr("Author")
-    }
-
     RowLayout {
-        height: 50
-        Layout.margins: 20
+        spacing: 10
 
-        Rectangle {
-            color: "lightsteelblue"; radius: 5
-            Layout.preferredWidth: 24
-            Layout.preferredHeight: 24
-            Layout.rightMargin: 10
-            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft
-            Image {
-                anchors.fill: parent
-                fillMode: Image.PreserveAspectFit
-                source: "qrc:///images/personal-logo.png"
+        ColumnLayout {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            Layout.minimumWidth: 300
+
+            Text {
+                Layout.leftMargin: 100
+                Layout.rightMargin: 20
+                font.pointSize: 12
+                text: qsTr("Copyright")
+            }
+
+            ColumnLayout {
+                height: 50
+                Layout.margins: 20
+
+                Text { text: "© 2023 " + qsTr("Sergey Levin") }
+
+                RowLayout {
+                    Text { text: qsTr("Licence: ") }
+                    ToolButton { text: "GPL v3"; hoverEnabled: true; onClicked: Qt.openUrlExternally("https://www.gnu.org/licenses/gpl-3.0.txt") }
+                }
+            }
+
+            Text {
+                Layout.leftMargin: 100
+                Layout.rightMargin: 20
+                font.pointSize: 12
+                text: qsTr("Author")
+            }
+
+            RowLayout {
+                height: 50
+                Layout.margins: 20
+
+                Rectangle {
+                    color: "lightsteelblue"; radius: 5
+                    Layout.preferredWidth: 24
+                    Layout.preferredHeight: 24
+                    Layout.rightMargin: 10
+                    Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft
+                    Image {
+                        anchors.fill: parent
+                        fillMode: Image.PreserveAspectFit
+                        source: "qrc:///images/personal-logo.png"
+                    }
+                }
+
+                Text { text: qsTr("Sergey Levin") }
+
+                ToolButton {
+                    icon.source: "qrc:///images/web.png"
+                    Layout.leftMargin: 50
+                    Layout.alignment: Qt.AlignVCenter
+                    ToolTip.delay: 1000
+                    ToolTip.timeout: 5000
+                    ToolTip.visible: hovered
+                    ToolTip.text: "https://levz.dev/image-finder"
+                    hoverEnabled: true
+                    onClicked: Qt.openUrlExternally(ToolTip.text)
+                }
+
+                ToolButton {
+                    property string email: "serjth@levz.dev"
+                    icon.source: "qrc:///images/email.png"
+                    Layout.alignment: Qt.AlignVCenter
+                    ToolTip.delay: 1000
+                    ToolTip.timeout: 5000
+                    ToolTip.visible: hovered
+                    ToolTip.text: qsTr("Send an email to ") + email
+                    hoverEnabled: true
+                    onClicked: Qt.openUrlExternally("mailto:" + email + "?subject=Image Finder")
+                }
             }
         }
 
-        Text { text: qsTr("Sergey Levin") }
-
-        ToolButton {
-            icon.source: "qrc:///images/web.png"
-            Layout.leftMargin: 50
-            Layout.alignment: Qt.AlignVCenter
-            ToolTip.delay: 1000
-            ToolTip.timeout: 5000
-            ToolTip.visible: hovered
-            ToolTip.text: "https://levz.dev/image-finder"
-            hoverEnabled: true
-            onClicked: Qt.openUrlExternally(ToolTip.text)
+        Item {
+            Layout.fillWidth: true
         }
 
-        ToolButton {
-            property string email: "serjth@levz.dev"
-            icon.source: "qrc:///images/email.png"
-            Layout.alignment: Qt.AlignVCenter
-            ToolTip.delay: 1000
-            ToolTip.timeout: 5000
-            ToolTip.visible: hovered
-            ToolTip.text: qsTr("Send an email to ") + email
-            hoverEnabled: true
-            onClicked: Qt.openUrlExternally("mailto:" + email + "?subject=Image Finder")
+        ColumnLayout {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            Layout.minimumWidth: 300
+
+            Text {
+                Layout.leftMargin: 100
+                Layout.rightMargin: 20
+                font.pointSize: 12
+                text: qsTr("Translators")
+            }
+
+            RowLayout {
+                height: 50
+                Layout.margins: 20
+
+                Text { text: qsTr("Vistaus (Dutch)") }
+            }
         }
     }
 }

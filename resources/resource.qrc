@@ -22,5 +22,8 @@
         <file>../images/logo.png</file>
         <file>../images/back.png</file>
         <file>../images/color.png</file>
+        <file>../i18n/qt_nl.qm</file>
+        <file>../i18n/qtbase_nl.qm</file>
+        <file>../i18n/image-finder_nl.qm</file>
     </qresource>
 </RCC>
