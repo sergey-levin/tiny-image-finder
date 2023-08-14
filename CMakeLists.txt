@@ -44,7 +44,10 @@ set(PROJECT_SOURCES
         paths.h
 )
 
-set(TS_FILES i18n/image-finder_ru.ts)
+set(TS_FILES
+    i18n/image-finder_ru.ts
+    i18n/image-finder_nl.ts
+)
 set(ALL_RC "${CMAKE_CURRENT_SOURCE_DIR}/resources/resource.qrc")
 
 if(WIN32)

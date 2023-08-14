@@ -11,17 +11,17 @@
 <context>
     <name>ImageView</name>
     <message>
-        <location filename="../qml/ImageView.qml" line="52"/>
+        <location filename="../qml/ImageView.qml" line="56"/>
         <source>Location: </source>
         <translation>Расположение: </translation>
     </message>
     <message>
-        <location filename="../qml/ImageView.qml" line="95"/>
+        <location filename="../qml/ImageView.qml" line="104"/>
         <source>Show Containing Folder</source>
         <translation>Открыть каталог файла</translation>
     </message>
     <message>
-        <location filename="../qml/ImageView.qml" line="89"/>
+        <location filename="../qml/ImageView.qml" line="98"/>
         <source>Open in External Viewer</source>
         <translation>Открыть в просмотрщике</translation>
     </message>
@@ -124,9 +124,8 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="45"/>
         <source>Image Finder</source>
-        <translation>Поиск Картинок</translation>
+        <translation type="vanished">Поиск Картинок</translation>
     </message>
 </context>
 <context>
@@ -162,6 +161,21 @@
         <translation>Поиск изображений во всех подпапках выбранной папки</translation>
     </message>
     <message>
+        <location filename="../qml/SettingsView.qml" line="196"/>
+        <source>Translators</source>
+        <translation>Переводчики</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsView.qml" line="203"/>
+        <source>Sergey Levin (Russian)</source>
+        <translation>Сергей Левин (русский)</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsView.qml" line="204"/>
+        <source>Vistaus (Dutch)</source>
+        <translation>Vistaus (голландский)</translation>
+    </message>
+    <message>
         <source>Lazy loading</source>
         <translation type="vanished">Ленивая загрузка</translation>
     </message>
@@ -176,28 +190,28 @@
         <translation>Выбрать фон для предпросмотра</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsView.qml" line="108"/>
+        <location filename="../qml/SettingsView.qml" line="116"/>
         <source>Copyright</source>
         <translation>Авторские права</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsView.qml" line="115"/>
-        <location filename="../qml/SettingsView.qml" line="147"/>
+        <location filename="../qml/SettingsView.qml" line="123"/>
+        <location filename="../qml/SettingsView.qml" line="155"/>
         <source>Sergey Levin</source>
         <translation>Сергей Левин</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsView.qml" line="118"/>
+        <location filename="../qml/SettingsView.qml" line="126"/>
         <source>Licence: </source>
         <translation>Лицензия: </translation>
     </message>
     <message>
-        <location filename="../qml/SettingsView.qml" line="127"/>
+        <location filename="../qml/SettingsView.qml" line="135"/>
         <source>Author</source>
         <translation>Автор</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsView.qml" line="168"/>
+        <location filename="../qml/SettingsView.qml" line="176"/>
         <source>Send an email to </source>
         <translation>Послать письмо по адресу: </translation>
     </message>

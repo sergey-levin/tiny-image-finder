@@ -196,10 +196,11 @@ ColumnLayout {
                 text: qsTr("Translators")
             }
 
-            RowLayout {
+            ColumnLayout {
                 height: 50
                 Layout.margins: 20
 
+                Text { text: qsTr("Sergey Levin (Russian)") }
                 Text { text: qsTr("Vistaus (Dutch)") }
             }
         }
